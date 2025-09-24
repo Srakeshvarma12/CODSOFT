@@ -4,30 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio — Rakesh Varma</title>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f4f4f9; color: #333; scroll-behavior: smooth;}
-    nav {position: fixed; top: 0; width: 100%; background: #222; padding: 0.8rem 0; z-index: 1000;}
-    nav ul {list-style: none; display: flex; justify-content: center; margin: 0; padding: 0;}
-    nav ul li {margin: 0 15px;}
-    nav ul li a {color: white; text-decoration: none; font-weight: bold; transition: color 0.3s;}
-    nav ul li a:hover {color: #ff9800;}
-    header {background: #444; color: white; text-align: center; padding: 5rem 1rem 3rem; margin-top: 3rem;}
-    section {padding: 3rem 2rem; max-width: 900px; margin: auto;}
-    h2 {color: #444; margin-bottom: 1rem; border-bottom: 2px solid #ddd; display: inline-block; padding-bottom: 5px;}
-    #about img {width: 150px; border-radius: 50%; margin: 1rem 0;}
-    #skills ul {list-style: none; padding: 0;}
-    #skills li {background: #eee; margin: 5px 0; padding: 8px; border-radius: 5px;}
-    .project {background: #fff; border: 1px solid #ddd; padding: 1rem; margin: 1rem 0; border-radius: 8px; transition: transform 0.2s;}
-    .project:hover {transform: scale(1.02); border-color: #ff9800;}
-    footer {text-align: center; background: #222; color: white; padding: 1rem 0; margin-top: 2rem;}
-    .back {display: inline-block; margin: 10px; padding: 8px 12px; background: #ff9800; color: #111; text-decoration: none; border-radius: 6px;}
+    body {margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);color:#e0f7fa;scroll-behavior:smooth;}
+    nav {position:fixed;top:0;width:100%;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);padding:0.8rem 0;z-index:1000;}
+    nav ul{list-style:none;display:flex;justify-content:center;margin:0;padding:0;}
+    nav ul li{margin:0 15px;}
+    nav ul li a{color:#e0f7fa;text-decoration:none;font-weight:bold;transition:color 0.3s;}
+    nav ul li a:hover{color:#00e5ff;}
+    header{padding:6rem 1rem 3rem;text-align:center;background:rgba(0,0,0,0.5);margin-top:3rem;box-shadow:0 4px 20px rgba(0,229,255,0.2);}
+    header h1{color:#00e5ff;text-shadow:0 0 12px #00e5ff;}
+    header p{color:#b2ebf2;}
+    section{padding:3rem 2rem;max-width:900px;margin:auto;}
+    h2{color:#00e5ff;text-shadow:0 0 8px #00e5ff;margin-bottom:1rem;border-bottom:2px solid rgba(255,255,255,0.1);display:inline-block;padding-bottom:5px;}
+    #about img{width:150px;border-radius:50%;margin:1rem 0;box-shadow:0 0 20px rgba(0,229,255,0.5);}
+    #skills li{list-style:none;background:rgba(255,255,255,0.08);margin:5px 0;padding:10px;border-radius:6px;}
+    .project{background:rgba(255,255,255,0.08);padding:1rem;margin:1rem 0;border-radius:10px;transition:transform 0.3s;}
+    .project:hover{transform:translateY(-5px);box-shadow:0 6px 20px rgba(0,229,255,0.4);}
+    footer{text-align:center;padding:1rem;background:rgba(0,0,0,0.7);}
+    footer a{color:#00e5ff;text-decoration:none;}
   </style>
 </head>
 <body>
-  <a class="back" href="../">← Back to Projects</a>
+  <a href="../" style="position:absolute;top:10px;left:10px;padding:6px 12px;background:#00e5ff;color:#111;text-decoration:none;border-radius:6px;">← Back</a>
 
-  <!-- Navigation Bar -->
+  <!-- Navbar -->
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
@@ -44,17 +45,14 @@
     <p>Python Developer | Backend Enthusiast | Learner</p>
   </header>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about">
     <h2>About Me</h2>
-    <img src="your-photo.jpg" alt="My Photo" onerror="this.style.display='none'">
-    <p>
-      Enthusiastic Python developer with experience in backend development, RESTful APIs, and database management using PostgreSQL/MySQL. 
-      Skilled in FastAPI and Django, with a problem-solving mindset and eagerness to learn. Passionate about building scalable, AI-driven solutions.
-    </p>
+    <img src="profile.jpg" alt="My Photo">
+    <p>Enthusiastic Python developer with experience in backend development, RESTful APIs, and database management using PostgreSQL/MySQL. Skilled in FastAPI and Django, with a problem-solving mindset and eagerness to learn. Passionate about building scalable, AI-driven solutions.</p>
   </section>
 
-  <!-- Skills Section -->
+  <!-- Skills -->
   <section id="skills">
     <h2>Skills</h2>
     <ul>
@@ -67,31 +65,30 @@
     </ul>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects -->
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
       <h3>Intrusion Detection in IoT Environment</h3>
-      <p>Developed a machine learning-based IDS to detect IoT cyberattacks like DoS, Probe, and Spoofing with high accuracy using Random Forest, SVM, and KNN.</p>
+      <p>Machine learning-based IDS detecting DoS, Probe, and Spoofing with high accuracy.</p>
     </div>
     <div class="project">
       <h3>Cost-Sensitive Wart Treatment Model</h3>
-      <p>Designed a Logistic Regression model for clinical decision-making, improving treatment accuracy while addressing class imbalance.</p>
+      <p>Logistic Regression model improving clinical treatment accuracy with class imbalance handling.</p>
     </div>
   </section>
 
-  <!-- Resume Section -->
+  <!-- Resume -->
   <section id="resume">
     <h2>Resume</h2>
     <p>
-      <a href="../CODSOFT_RESUME.pdf" download>📄 Download My Resume</a>
-      <br><br>
+      <a href="../CODSOFT_RESUME.pdf">📄 Download My Resume</a><br><br>
       Or view online: 
       <a href="https://1drv.ms/b/c/9497be968dad6f4b/EXp_E4pXvyJMtpcfVMT79S8BKxVKQr95D-3l0rkn2JTcNA?e=SEI0Jp" target="_blank">View Resume</a>
     </p>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:srvarma2004@gmail.com">srvarma2004@gmail.com</a></p>
@@ -99,9 +96,8 @@
     <p>Location: Nellore, Andhra Pradesh</p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Rakesh Varma | All Rights Reserved</p>
+    <p>&copy; 2025 Rakesh Varma</p>
   </footer>
 </body>
 </html>
