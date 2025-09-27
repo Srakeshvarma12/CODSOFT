@@ -94,7 +94,7 @@
       border-radius: 6px;
     }
 
-    .project {
+    .project, .certificate {
       background: rgba(255, 255, 255, 0.08);
       padding: 1rem;
       margin: 1rem 0;
@@ -102,20 +102,20 @@
       transition: transform 0.3s;
     }
 
-    .project:hover {
+    .project:hover, .certificate:hover {
       transform: translateY(-5px);
       box-shadow: 0 6px 20px rgba(0, 229, 255, 0.4);
     }
 
     a {
-      color: #ffeb3b; /* Golden color */
+      color: #ffeb3b; /* Golden */
       text-decoration: none;
       font-weight: bold;
       text-shadow: 0 0 6px rgba(255, 235, 59, 0.7);
     }
 
     a:hover {
-      color: #00e5ff; /* Aqua glow on hover */
+      color: #00e5ff; /* Aqua */
       text-shadow: 0 0 10px rgba(0, 229, 255, 0.9);
     }
 
@@ -133,8 +133,9 @@
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</</li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -178,6 +179,28 @@
       <p>Logistic Regression model improving clinical treatment accuracy with class imbalance handling.</p>
     </div>
   </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certificate">
+      <h3>Programming in Python — Coursera</h3>
+      <p>Issued by Coursera — Completed in 2024</p>
+    </div>
+    <div class="certificate">
+      <h3>Data Analysis with Python — Coursera</h3>
+      <p>Issued by Coursera — Completed in 2024</p>
+    </div>
+    <div class="certificate">
+      <h3>Python for Data Science — IBM</h3>
+      <p>Issued by IBM — Completed in 2024</p>
+    </div>
+    <div class="certificate">
+      <h3>Technical Support Fundamentals — Coursera</h3>
+      <p>Issued by Coursera — Completed in 2024</p>
+    </div>
+  </section>
+
 
   <!-- Resume -->
   <section id="resume">
